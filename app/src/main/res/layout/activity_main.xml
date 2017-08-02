@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_screen"
+    tools:context="mjhub_games.balloonpop.MainActivity"
+    android:background="@drawable/gradient">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#4dD3D3D3"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PLAY"
+            android:textSize="25dp"
+            android:onClick="startLevel"
+            android:id="@+id/go_button" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High Score"
+            android:id="@+id/high_score"
+            android:paddingLeft="50dp"
+            android:textSize="25dp"
+            android:textColor="#f9f4f4" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/high_score_value"
+            android:paddingLeft="20dp"
+            android:textSize="25dp"
+            android:textColor="#f9f4f4"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Level"
+            android:id="@+id/level"
+            android:paddingLeft="20dp"
+            android:textSize="25dp"
+            android:textColor="#f9f4f4" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/level_value"
+            android:paddingLeft="20dp"
+            android:textSize="25dp"
+            android:textColor="#f9f4f4"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score"
+            android:id="@+id/score"
+            android:paddingLeft="20dp"
+            android:textSize="25dp"
+            android:textColor="#f8f2f2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/score_value"
+            android:paddingLeft="20dp"
+            android:textSize="25dp"
+            android:textColor="#f9f4f4"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="LIVES:"
+        android:id="@+id/textView"
+        android:textColor="#f9f4f4"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="100"
+        android:id="@+id/lives_value"
+        android:textColor="#f9f4f4"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ABCDEUFGHJ"
+        android:id="@+id/currSeq"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="#f9f6f6"
+        android:textSize="40dp" />
+
+</RelativeLayout>
